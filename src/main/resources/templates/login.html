@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>shiro-oauthclient-demo</title>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css"/>
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css"/>
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body class="gray-bg">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span12">
+						<form class="form-horizontal" action="login" method="post">
+							<div class="control-group">
+								 <label class="control-label" for="inputEmail">用户名</label>
+								<div class="controls">
+									<input id="inputEmail" type="text" name="username"/>
+								</div>
+							</div>
+							<div class="control-group">
+								 <label class="control-label" for="inputPassword">密码</label>
+								<div class="controls">
+									<input id="inputPassword" type="password" name="pwd"/>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									 <button type="submit" class="btn">登陆</button>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<!-- 将下面的appid、client_id替换为自己应用的id，回调替换为自己配置的回调，保持和application.properties中一致-->
+									<a href="https://open.weixin.qq.com/connect/qrconnect?response_type=code&amp;appid=aaaaaaa&amp;redirect_uri=http://www.zrk1000.cn/oauthclient/callback?client_name=WeiXinClient&amp;scope=snsapi_login">微信登录</a>
+									<a href="https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;client_id=bbbbbb&amp;redirect_uri=http://www.zrk1000.cn/oauthclient/callback?client_name=QqClient&amp;scope=get_user_info&amp;state=qq">QQ登录</a>
+									<a href="https://api.weibo.com/oauth2/authorize?client_id=ccccccc&amp;response_type=code&amp;redirect_uri=http://www.zrk1000.cn/oauthclient/callback?client_name=SinaWeiboClient&amp;state=weibo">微博登录</a>
+						
+<!-- 									 <button type="button" class="btn">qq登陆</button> -->
+<!-- 									 <button type="button" class="btn">微信登陆</button> -->
+<!-- 									 <button type="button" class="btn">微博登陆</button> -->
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

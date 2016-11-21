@@ -1,0 +1,27 @@
+INSERT INTO (
+	id,
+	username,
+	email,
+	head_img,
+	nick_name,
+	tel,
+	pwd,
+	qq_openid,
+	sina_openid,
+	weixin_openid,
+	useable
+)
+VALUES
+	(
+		1,
+		'admin',
+		'zrk1000@163.com',
+		'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=266158537,114847377&fm=116&gp=0.jpg',
+		'zrk1000',
+		'18888888888',
+		'admin',
+		NULL,
+		NULL,
+		NULL,
+		1
+	)
