@@ -6,5 +6,7 @@ logs
 dependency-reduced-pom.xml
 .classpath
 .project
+.settings
+.mvn
 mvnw
-mvnw.cd
+mvnw.cmd
