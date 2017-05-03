@@ -4,3 +4,7 @@ target
 *.iml
 logs
 dependency-reduced-pom.xml
+.classpath
+.project
+mvnw
+mvnw.cd
